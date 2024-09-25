@@ -152,7 +152,6 @@ body {
         max-width: 100%;
         /* border: 1px solid black; */
     }
-
     .image {
         max-width: 100%;
     }
@@ -162,7 +161,7 @@ body {
 @media (max-width: 550px ){
     .loginPage {
         max-width: 400px;
-        padding: 20px;
+        padding: 10px;
         display: block
     }
 
@@ -171,7 +170,7 @@ body {
 @media (max-width: 350px ){
     .loginPage {
         max-width: 200px;
-        padding: 20px;
+        padding: 5px;
         display: block
     }
 
