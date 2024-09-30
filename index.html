@@ -22,7 +22,7 @@
 
 <body>
     <!-- Body -->
-    <div class="loginPage">
+    <div class="loginPage" id="login">
         <!-- login -->
         <div class="loginInfo">
             <h2>Login</h2>
@@ -39,6 +39,7 @@
                 <!-- <p><a href="#">Forget Password?</a></p> -->
                 <br>
                 <input type="password" id="password" placeholder="Enter 6 character or more">
+                <p id="outputText"></p>
             </div>
             <!-- remember -->
             <div class="checkbox">
@@ -46,16 +47,27 @@
                 <label for="remember">Remember Me</p>
             </div>
 
-            <button class="loginBtn">LOGIN</button>
+            <button type="button" class="loginBtn" onclick="login()">LOGIN</button>
             <p class="orLoginWith">____________or Login With____________
             <p></p>
-            <button class="googleBtn"><img src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png" alt="">Google</button><button class="facebookBtn"> <img src="https://static.vecteezy.com/system/resources/previews/018/930/476/original/facebook-logo-facebook-icon-transparent-free-png.png" alt="">facebook</button>
+            <button class="googleBtn"><img
+                    src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png"
+                    alt="">Google</button><button class="facebookBtn"> <img
+                    src="https://static.vecteezy.com/system/resources/previews/018/930/476/original/facebook-logo-facebook-icon-transparent-free-png.png"
+                    alt="">facebook</button>
         </div>
         <!-- Image -->
         <div class="image">
-            <img src="https://cdni.iconscout.com/illustration/premium/thumb/login-page-illustration-download-in-svg-png-gif-file-formats--app-developing-development-secure-mobile-webapp-and-pack-design-illustrations-3783954.png" alt="">
+            <img src="https://cdni.iconscout.com/illustration/premium/thumb/login-page-illustration-download-in-svg-png-gif-file-formats--app-developing-development-secure-mobile-webapp-and-pack-design-illustrations-3783954.png"
+                alt="">
         </div>
     </div>
+    <div class="popup" id="popup">
+        <h2>Thank You</h2>
+        <p>Your details has been sccessfully submitted</p>
+        <button onclick="closepopup()">Ok</button>
+    </div>
+    <script src="index.js"></script>
 </body>
 
 </html>
