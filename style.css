@@ -172,12 +172,6 @@ body {
     transform: transform 1s, top 1s ;
 }
 
-.open-popup {
-    visibility: visible;
-    top: 50%;
-    transform: translate(-50%, -50%) scale(1.1);
-}
-
 .popup h2 {
     font-size: 38px;
     font-weight: 600;
@@ -194,6 +188,12 @@ body {
     border-radius: 5px;
     font-size: 18px;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.open-popup {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1.1);
 }
 
 @media (max-width: 950px) {
