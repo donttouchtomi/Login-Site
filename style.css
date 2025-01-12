@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Work Sans", sans-serif;
+    background-image: url(https://img.freepik.com/free-photo/fading-blue-background_53876-88684.jpg?size=626&ext=jpg&ga=GA1.1.1819120589.1727136000&semt=ais_hybrid);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.loginPage {
+    margin: 10px auto;
+    padding: 45px;
+    background-color: rgba(255, 255, 255, 0.904);
+    box-shadow: 0px 0px 10px rgb(121, 121, 121);
+    display: flex;
+    align-items: center;
+    max-width: 900px;
+    border-radius: 20px;
+    /* border: 1px solid black; */
+}
+
+.removelogin-page {
+    visibility: hidden;
+}
+
+.loginInfo {
+    max-width: 500px;
+    padding: 25px;
+}
+
+.loginInfo h2 {
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.loginInfo p {
+    margin-top: 5px;
+    font-size: 15px;
+    color: rgb(180, 180, 180);
+}
+
+.loginInfo p a {
+    color: rgb(156, 20, 219);
+}
+
+.loginInfo p a:active {
+    color: rgb(106, 14, 148);
+}
+
+.emailInput,
+.passwordInput {
+    margin-top: 25px;
+}
+
+.emailInput>label,
+.passwordInput>label {
+    font-weight: 600;
+}
+
+.emailInput input,
+.passwordInput input {
+    height: 45px;
+    width: 100%;
+    border-radius: 5px;
+    outline: none;
+    border: 0.5px solid rgb(151, 150, 150);
+    padding: 15px;
+}
+
+.passwordInput p {
+    display: inline;
+    margin-left: 30%;
+    color: rgb(156, 20, 219);
+    font-size: 14px;
+}
+
+.passwordInput p a:active {
+    color: rgb(106, 14, 148);
+}
+
+.checkbox {
+    margin: 10px 0;
+}
+
+.checkbox>input {
+    height: 10px;
+}
+
+.checkbox label {
+    font-size: 14px;
+}
+
+.orLoginWith {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.loginBtn {
+    display: block;
+    margin-bottom: 25px;
+    width: 100%;
+    height: 45px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(91, 91, 236);
+    color: white;
+    cursor: pointer;
+}
+
+.loginBtn:active {
+    background-color: rgb(29, 29, 155);
+}
+
+.googleBtn,
+.facebookBtn {
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+    height: 45px;
+    width: 45%;
+    margin: 10px 5px;
+}
+
+.googleBtn:active,
+.facebookBtn:active {
+    background-color: rgba(212, 212, 212, 0.863);
+}
+
+.googleBtn {
+    color: rgb(247, 65, 65);
+    border: 1px solid rgb(247, 65, 65);
+}
+
+.googleBtn>img,
+.facebookBtn>img {
+    width: 20px;
+}
+
+.facebookBtn {
+    color: rgb(91, 91, 236);
+    border: 1px solid rgb(91, 91, 236);
+}
+
+.image>img {
+    width: 100%;
+}
+
+#outputText {
+    font-size: 12px;
+    color: red;
+    margin: 0;
+}
+
+.popup {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 30px;
+    color: #333;
+    text-align: center;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    transform: transform 1s, top 1s ;
+}
+
+.popup h2 {
+    font-size: 38px;
+    font-weight: 600;
+}
+
+.popup button {
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background-color: rgb(91, 91, 236);
+    border: none;
+    color: #fff;
+    outline: none;
+    border-radius: 5px;
+    font-size: 18px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.open-popup {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+@media (max-width: 950px) {
+    .loginPage {
+        max-width: 700px;
+        padding: 30px;
+    }
+
+    .image {
+        max-width: 300px;
+    }
+
+}
+
+
+@media (max-width: 750px) {
+    .loginPage {
+        max-width: 600px;
+        padding: 20px;
+        display: block
+    }
+
+    .loginInfo {
+        max-width: 100%;
+        /* border: 1px solid black; */
+    }
+
+    .image {
+        max-width: 100%;
+    }
+
+}
+
+@media (max-width: 550px) {
+    .loginPage {
+        max-width: 400px;
+        padding: 10px;
+        display: block
+    }
+
+}
+
+@media (max-width: 350px) {
+    .loginPage {
+        max-width: 200px;
+        padding: 5px;
+        display: block
+    }
+
+}

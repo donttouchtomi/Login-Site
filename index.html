@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- Roboto Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Work Sans Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Login or SignUp</title>
+</head>
+
+<body>
+    <!-- Body -->
+    <div class="loginPage" id="login">
+        <!-- login -->
+        <div class="loginInfo">
+            <h2>Login</h2>
+            <p>Doesn't have an account yet? <a href="signup.html">Sign Up</a></p>
+            <!-- email -->
+            <div class="emailInput">
+                <label for="email">Email Address</label>
+                <br>
+                <input type="email" id="email" placeholder="your@example.com">
+            </div>
+            <!-- password -->
+            <div class="passwordInput">
+                <label for="password">Password</label>
+                <!-- <p><a href="#">Forget Password?</a></p> -->
+                <br>
+                <input type="password" id="password" placeholder="Enter 6 character or more">
+                <p id="outputText"></p>
+            </div>
+            <!-- remember -->
+            <div class="checkbox">
+                <input id="remember" type="checkbox">
+                <label for="remember">Remember Me</p>
+            </div>
+
+            <button type="button" class="loginBtn" onclick="login()">LOGIN</button>
+            <p class="orLoginWith">____________or Login With____________
+            <p></p>
+            <button class="googleBtn"><img
+                    src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png"
+                    alt="">Google</button><button class="facebookBtn"> <img
+                    src="https://static.vecteezy.com/system/resources/previews/018/930/476/original/facebook-logo-facebook-icon-transparent-free-png.png"
+                    alt="">facebook</button>
+        </div>
+        <!-- Image -->
+        <div class="image">
+            <img src="https://cdni.iconscout.com/illustration/premium/thumb/login-page-illustration-download-in-svg-png-gif-file-formats--app-developing-development-secure-mobile-webapp-and-pack-design-illustrations-3783954.png"
+                alt="">
+        </div>
+    </div>
+    <div class="popup" id="popup">
+        <h2>Thank You</h2>
+        <p>Your details has been sccessfully submitted</p>
+        <button onclick="closepopup()">Ok</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
