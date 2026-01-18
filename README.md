@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./Login Site Screenshot.jog)
+![Screenshot](Login Site Screenshot.jog)
 
 ### Links
 
@@ -44,7 +44,7 @@ Users should be able to:
 
 Over the course creating this webpage i learned how to work with function and if and else elements
 
-```css
+```Javascript
 function closepopup() {
   popup.classList.remove("open-popup");
   //   loginPage.classList.remove("removelogin-page");
@@ -56,5 +56,6 @@ function closepopup() {
 I want to focus on how to use the event listener element in Javascript...
 
 ## Author
+
 - GitHub - [@donttouch_tomi](https://github.com/donttouchtomi)
 - Twitter - [@donttouch_tomi](https://www.twitter.com/donttouch_tomi)
