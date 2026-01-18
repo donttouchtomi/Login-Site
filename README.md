@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot](Login Site Screenshot.jpg)
+![Screenshot](Screenshot.jpg)
 
 ### Links
 
